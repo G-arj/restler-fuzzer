@@ -697,7 +697,6 @@ class Request(object):
         for request_block in req_definition:
             primitive_type = request_block[0]
             writer_variable = None
-
             if primitive_type == primitives.FUZZABLE_GROUP:
                 field_name = request_block[1]
                 default_val = request_block[2]
@@ -831,10 +830,9 @@ class Request(object):
 
             fuzzable.append(values)
             writer_variables.append(writer_variable)
-
         return fuzzable, writer_variables, tracked_parameters
 
-    def render_iter(self, candidate_values_pool, skip=0, preprocessing=False):
+    def render_iter(self, candidate_values_pool, skip=0, preprocessing=False, value_list=False):
         """ This is the core method that renders values combinations in a
         request template. It basically is a generator which lazily iterates over
         a pool of possible combination of values that fit the template of the
@@ -893,7 +891,8 @@ class Request(object):
             # lazy generation of pool for candidate values
             combinations_pool = itertools.product(*fuzzable)
             combinations_pool = itertools.islice(combinations_pool,
-                                                 Settings().max_combinations)
+                                                    Settings().max_combinations)
+
 
             # skip combinations, if asked to
             while next_combination < skip:
@@ -927,7 +926,10 @@ class Request(object):
                     for idx in idx_list:
                         tracked_parameter_values[k].append(values[idx])
 
-                rendered_data = "".join(values)
+                if value_list:
+                    rendered_data = values
+                else:
+                    rendered_data = "".join(values)
                 yield rendered_data, parser, tracked_parameter_values
 
     def render_current(self, candidate_values_pool, preprocessing=False):
