@@ -1,0 +1,162 @@
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 6)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61AF0>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61A60>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F619D0>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.298: Sending: 'PUT /pass/1.1/A/9Esshu5mX/B/0/C/int HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.310: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 5)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61AF0>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61C10>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F619D0>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.366: Sending: 'PUT /pass/2.2/A/Ss9<voi?3/B/1/C/number HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.374: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 4)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61B80>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61AF0>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61EE0>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.430: Sending: 'PUT /pass/3.3/A/qeQijceRZQZG/B/2/C/string HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.440: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 3)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F618B0>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61A60>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61C10>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.501: Sending: 'PUT /fail/1.1/A/Qnl&?FrN#)\x0bz/B/3/C/int HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.509: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 2)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61CA0>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F618B0>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F61D30>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.577: Sending: 'PUT /fail/2.2/A/LEN0pThn/B/4/C/number HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.589: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
+
+Generation-1: Rendering Sequence-1
+
+	Request: 1 (Remaining candidate combinations: 1)
+	Request hash: bc2a332df1e97cfad2de113e96861bd8d247595a
+
+		- restler_static_string: 'PUT '
+		- restler_static_string: '/'
+		+ restler_custom_payload: [pass, fail, ...]
+		- restler_static_string: '/'
+		+ restler_fuzzable_number: [1.1, 2.2, ...]
+		- restler_static_string: '/A/'
+		- restler_fuzzable_string: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F750D0>
+		- restler_static_string: '/B/'
+		- restler_fuzzable_int: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F75310>
+		- restler_static_string: '/C/'
+		- restler_custom_payload: <function CandidateValuesPool.get_candidate_values.<locals>.get_custom_value_generator.<locals>.value_generator_wrapper at 0x000001D740F75280>
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: unittest\r\n'
+		- restler_static_string: 'Content-Type: application/json\r\n'
+		- restler_static_string: '\r\n'
+
+2022-03-10 23:00:41.682: Sending: 'PUT /fail/3.3/A/<x>ae(4V/B/0/C/string HTTP/1.1\r\nAccept: application/json\r\nHost: unittest\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n'
+
+2022-03-10 23:00:41.695: Received: "HTTP/1.1 403 Forbidden\r\nRestler Test\r\n\r\n{'User not authorized or no auth token specified.'}"
+
